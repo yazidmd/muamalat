@@ -1,0 +1,18 @@
+﻿<ion-content scroll="false">
+	<ion-scroll direction="y" class="height-85 latest-main">
+	<div ng-repeat="item in latest" class="padding width-50 float-left no-margin no-border">
+		<div class="latest-item margin-auto stable relative" ui-sref="app.detail">
+			<img src="img/home/latest/{{item.id}}.jpg">
+			<span class="item-price" ng-show="item.sale">RM{{item.price-(item.price*item.sale/100) | number:0}}</span>
+			<span class="item-price" ng-class="{'has-sale':item.sale>0}">RM{{item.price}}</span>
+			<div>{{item.bought | number}} bought this</div>
+			<div class="item-note absolute width-100 light" ng-show="item.sale || item.hourlyDeal">
+				<div ng-show="item.hourlyDeal" class="item-hour">
+					<div>{{item.hourlyDeal}}</div>Hourly Deal!
+				</div>
+				<div class="item-sale bg-full-h">-{{item.sale}}%</div>
+			</div>
+		</div>
+	</div>
+	</ion-scroll>
+</ion-content>

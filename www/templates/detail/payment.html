@@ -1,0 +1,58 @@
+<ion-modal-view class="modal-size modal-payment">
+<ion-content class="payment-main" scroll="false" ng-class="{'has-footer':!ShipTo && !payment}">
+<div class="continue-shopping text-center width-100" ng-click="closeModalPayment()">
+	<h2 class="light no-margin icon ion-ios-close-empty"></h2>CONTINUE SHOPPING
+</div>
+<ion-scroll class="height-100">
+	<div class="row">
+		<div class="col"><b>Bill To</b></div>
+		<div class="col text-right">
+			<div>{{shopping.billto}}</div>
+			<u>edit</u>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col"><b>Item Total</b></div>
+		<div class="col text-right">{{detail.price | currency}}</div>
+	</div>
+	<div class="row">
+		<div class="col"><b>Estimated Shipping</b></div>
+		<div class="col text-right">{{detail.shipping | currency}}</div>
+	</div>
+	<div class="row">
+		<div class="col"><b>Order Total</b></div>
+		<div class="col text-right"><b>{{detail.price+detail.shipping | currency}}</b></div>
+	</div>
+	<div class="list shopping-list padding no-margin">
+		<div class="item item-thumbnail-left item-text-wrap">
+			<img src="img/detail/{{detail.img[0].name}}.jpg">
+			<b>{{detail.name}}</b>
+			<div><b>Size</b>: {{shopping.size}}</div>
+			<div><b>Color</b>: {{shopping.color}}</div>
+			<div><b>Quantily</b>: {{shopping.quantily}}</div>
+			<div class="row row-no-padding">
+				<b class="margin-right">Shipping:</b>
+				<div class="col col-66">
+					{{detail.shipping | currency}}
+					<p>{{detail.shiptime}}</p>
+				</div>
+			</div>
+			<div>
+				<span class="list-price" ng-class="{'has-sale':detail.sale}">{{detail.price | currency}}</span>
+				<span class="list-price" ng-show="detail.sale">{{detail.sale | currency}}</span>
+			</div>
+			<div class="text-right">
+				<u class="padding-horizontal" ng-click="showRemove()">remove</u>
+				<u class="padding-horizontal" ng-click="showPopupQuantily()">edit</u>
+			</div>
+		</div>
+	</div>
+	<div class="padding"><u>Return Policy</u></div>
+<div ng-show="ShipTo" class="shopping-shipto absolute-full" ng-include="'templates/shopping/shipto.html'"></div>
+<div ng-show="payment" class="shopping-payment absolute-full" ng-include="'templates/shopping/payment.html'"></div>
+</ion-scroll>
+</ion-content>
+<ion-footer-bar ng-if="!ShipTo && !payment" class="no-padding">
+	<button class="button button-full no-margin button-energized" ng-click="openPayment()">CHECKOUT</button>
+</ion-footer-bar>
+</ion-modal-view>

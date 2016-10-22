@@ -1,0 +1,22 @@
+﻿<ion-content class="latest-main">
+<div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search">
+  </label>
+</div>
+<div ng-repeat="item in recently" class="padding width-50 float-left no-margin no-border">
+	<div class="latest-item margin-auto stable relative" ui-sref="app.detail">
+		<img src="img/home/latest/{{item.id}}.jpg">
+		<span class="item-price" ng-show="item.sale">${{item.price-(item.price*item.sale/100) | number:0}}</span>
+		<span class="item-price" ng-class="{'has-sale':item.sale>0}">${{item.price}}</span>
+		<div>{{item.bought | number}} bought this</div>
+		<div class="item-note absolute width-100 light" ng-show="item.sale || item.hourlyDeal">
+			<div ng-show="item.hourlyDeal" class="item-hour">
+				<div>{{item.hourlyDeal}}</div>Hourly Deal!
+			</div>
+			<div class="item-sale bg-full-h">-{{item.sale}}%</div>
+		</div>
+	</div>
+</div>
+</ion-content>

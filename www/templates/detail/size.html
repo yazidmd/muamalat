@@ -1,0 +1,11 @@
+<ion-modal-view class="modal-size">
+<ion-header-bar align-title="center">
+	<div class="title">SELECT SIZE</div>
+	<button class="button button-clear button-icon ion-ios-close-empty" ng-click="closeModalSize()"></button>
+</ion-header-bar>
+<ion-content>
+	<div class="list">
+		<div ng-repeat="item in detail.size" class="item no-border text-center" ng-click="selectSize()">{{item.value}}</div>
+	</div>
+</ion-content>
+</ion-modal-view>

@@ -1,0 +1,14 @@
+﻿<ion-content class="items-main">
+<div ng-repeat="item in accountItems" class="padding float-left no-margin no-border">
+<div class="items">
+	<div>{{item.name}}</div>
+	<img src="img/account/items/{{item.id}}.jpg">
+	<div class="items-image width-100">
+		<img ng-repeat="itemImage in item.img" src="img/account/items/{{itemImage.name}}.jpg">
+		<div class="more-image" ng-show="item.img.length > 0">
+			<span>+{{item.countImg - item.img.length}}</span>
+		</div>
+	</div>
+</div>
+</div>
+</ion-content>

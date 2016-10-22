@@ -1,0 +1,20 @@
+﻿<ion-view hide-nav-bar="true">
+<link href="css/sign.css" rel="stylesheet" type="text/css" />
+<ion-header-bar class="header-menu no-padding no-border" style="height:103px">
+<div class="bar-header width-100">
+	<h4 class="padding-horizontal">Welcome</h4>
+	<div class="padding light text-center" style="background:#3e4560">
+		<h4 class="light no-margin"><b>What do you like to shop for?</b></h4>
+		<small>Pick at least one category</small>
+	</div>
+</div>
+</ion-header-bar>
+<ion-content class="suggestion-main" style="top:103px;bottom:0">
+	<ion-checkbox ng-repeat="item in suggestion" ng-model="item.selected" ng-click="checkSuggestion()">
+		<img src="img/suggestion/{{item.id}}.png">
+	</ion-checkbox>
+</ion-content>
+<ion-footer-bar ng-show="buttonSuggestion" class="padding suggestion-footer">
+	<button class="button button-block sign-button-calm no-margin" ui-sref="app.home">Next</button>
+</ion-footer-bar>
+</ion-view>

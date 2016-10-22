@@ -1,0 +1,20 @@
+﻿<ion-view title="Sign In">
+<link href="css/sign.css" rel="stylesheet" type="text/css" />
+<ion-content class="padding text-center">
+	<span>Let’s sign you in</span>
+	<div class="list padding-top sign-form">
+	  <label class="item item-input">
+		<input type="text" placeholder="Email" ng-model="data.email">
+	  </label>
+	  <label class="item item-input">
+		<input type="password" placeholder="Password" ng-model="data.password">
+	  </label>
+	</div>
+	<button class="button button-positive button-block" ng-click="login()">Sign In</button>
+	<a class="stable" ui-sref="app.forgot"><u>Forgot Password?</u></a>
+	<div class="padding sign-social margin-top">
+		<button class="button button-block icon-left icon-google">Sign In with Google</button>
+		<button class="button button-block icon-left icon-facebook">Sign In with Facebook</button>
+	</div>
+</ion-content>
+</ion-view>

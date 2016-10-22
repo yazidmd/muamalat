@@ -1,0 +1,27 @@
+﻿<ion-view hide-nav-bar="false" hide-back-button="true">
+<link href="css/home.css" rel="stylesheet" type="text/css" />
+<ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+</ion-nav-buttons>
+<ion-nav-title><img src="css/img/logo-white.png" height="14px"></ion-nav-title>
+<ion-nav-buttons side="secondary">
+    <button class="button button-icon button-clear ion-ios-search" ui-sref="app.search"></button>
+</ion-nav-buttons>
+<ion-tabs class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+  <ion-tab title="Gallery">
+	<ion-nav-view><ion-pane ng-include="'templates/home/gallery.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="Cart">
+	<ion-nav-view><ion-pane ng-include="'templates/home/recently.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="Order">
+	<ion-nav-view><ion-pane ng-include="'templates/home/gadgets.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="Wallet">
+	<ion-nav-view><ion-pane ng-include="'templates/home/gadgets.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="Favorite">
+	<ion-nav-view><ion-pane ng-include="'templates/home/gadgets.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+</ion-tabs>
+</ion-view>

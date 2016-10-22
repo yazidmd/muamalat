@@ -1,0 +1,76 @@
+.personalize-birthday .row>.col{margin:0px 5px}
+.personalize-birthday .select-item{
+	height:50px;
+	line-height:50px
+}
+.personalize-birthday .select-item.active{
+	color:#000;
+	border-top:1px solid #3fc2ff;
+	border-bottom:1px solid #3fc2ff;
+}
+.personalize-gender{
+	width:150px;
+	border-radius:5px;
+	overflow:visible
+}
+.personalize-gender>.button{
+	width:100%;
+	padding-right:0;
+	text-align:left;
+	border:1px solid #666;
+	min-height:25px;
+	line-height:25px;
+	background:#dcdcdc;
+    background:-webkit-linear-gradient(#f3f3f3, #a3a3a3);
+    background:-o-linear-gradient(#f3f3f3, #a3a3a3);
+    background:-moz-linear-gradient(#f3f3f3, #a3a3a3);
+    background:linear-gradient(#f3f3f3, #a3a3a3);
+}
+.personalize-gender>.button:before{
+	line-height:25px;
+	font-size:14px;
+	padding:0 5px;
+	color:#fff;
+	background:#858585
+}
+.personalize-gender .gender-select{
+	margin-top:5px;
+	margin-left:5px;
+	width:120px;
+	border-radius:8px;
+	overflow:hidden
+}
+.gender-select .item{
+	background:#dfdfdf;
+	padding:10px;
+	text-align:left
+}
+
+.popup-chose-photo .popup{
+	background:#fff;
+	border-radius:5px
+}
+.popup-chose-photo .popup-head{border:none}
+.popup-chose-photo .popup-body img{
+	width:50px;
+    display:block;
+    margin:0 auto
+}
+.popup-chose-photo .popup-buttons .button{
+	background:#efefef;
+	border:1px solid #b8b8b8;
+	color:#000;
+	border-radius:5px
+}
+
+.password-main .item.item-input{
+	margin-bottom:10px;
+	border-radius:5px!important;
+	border-color:#a4a4a4;
+	padding:0;
+	padding-left:10px
+}
+
+.popup-delete-payment .popup{background:#fff}
+.popup-delete-payment .popup-head{display:none}
+.popup-delete-payment .popup-body{text-align:center}

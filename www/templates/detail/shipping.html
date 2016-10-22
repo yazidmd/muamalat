@@ -1,0 +1,23 @@
+<ion-content class="padding shipping-main">
+<div class="row no-padding">
+	<div class="col col-33">Estimated Shipping</div>
+	<div class="col">
+		<p class="no-margin">{{detail.shipping | currency}}</p>to your country
+	</div>
+</div>
+<div class="row no-padding">
+	<div class="col col-33">Availability</div>
+	<div class="col">Ships to Your Country and 64 other countries</div>
+</div>
+<div class="row no-padding">
+	<div class="col col-33">Estimated Arrival</div>
+	<div class="col">{{detail.shiptime}}</div>
+</div>
+<div class="row no-padding">
+	<div class="col col-33">Return Policy</div>
+	<div class="col">
+		<span>You may return all products within 30 days of delivery.</span>
+		<div class="text-right positive" ui-sref="app.detailPolicy">Details...</div>
+	</div>
+</div>
+</ion-content>

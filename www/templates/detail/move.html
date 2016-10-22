@@ -1,0 +1,22 @@
+<ion-modal-view class="modal-full modal-move-to">
+<ion-header-bar class="bar bar-dark">
+	<button class="button button-clear button-icon ion-android-arrow-back" ng-click="closeModalMove()"></button>
+	<div class="title">Move To</div>
+</ion-header-bar>
+<ion-content class="modal-move-main">
+<div class="list bg-none create-list">
+  <div class="item item-input-inset bg-none no-border">
+    <label class="item-input-wrapper light-bg">
+      <input type="text" placeholder="Create Wishlist">
+    </label>
+    <button class="button button-small light">Create</button>
+  </div>
+  <div class="item item-divider light no-border">Your Wishlist</div>
+  <div class="item bg-none light" ng-click="moveTo('Birthday Wishlist')">Birthday Wishlist</div>
+  <div class="item bg-none light" ng-click="moveTo('Miscellaneous')">Miscellaneous</div>
+</div>
+</ion-content>
+<ion-footer-bar class="bar bar-dark">
+	<button class="button button-block no-margin button-stable" ng-click="removeSave()"><span class="light">Remove from Profile</span></button>
+</ion-footer-bar>
+</ion-modal-view>

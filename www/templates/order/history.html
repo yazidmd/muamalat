@@ -1,0 +1,21 @@
+<ion-view title="Order History">
+<link href="css/order.css" rel="stylesheet" type="text/css">
+<ion-content class="order-history">
+<div class="list">
+	<div ng-repeat="item in orderHistory" class="item no-border" ng-class="{'stable-bg':$odd}" ui-sref="app.orderDetail({id:item.id})">
+		<b>#{{item.id}}</b>
+		<div>
+			<b>Total:</b> <span>{{item.total | currency}}</span>
+			<span class="float-right order-status balanced-bg" ng-class="{'cancelled':item.status=='Cancelled','completed':item.status=='Completed'}">{{item.status}}</span>
+		</div>
+		<b>Delivery Date:</b> <span>{{item.date}}</span>
+	</div>
+</div>
+<div ng-show="!orderHistory" class="text-center padding">
+	<span class="padding-top">We have your back! You never have to worry when you shop on Fashion I.</span>
+	<div class="padding-vertical"><i class="icon icon-list"></i></div>
+	<span>You haven’t made any orders.</span>
+	<button class="button button-stable button-block" ui-sref="app.home">Close</button>
+</div>
+</ion-content>
+</ion-view>

@@ -1,0 +1,24 @@
+﻿<ion-view hide-nav-bar="true" class="home-refine">
+<link href="css/home.css" rel="stylesheet" type="text/css" />
+<ion-header-bar align-title="center">
+	<button class="button button-icon button-clear ion-android-arrow-back" ng-click="goBack()"></button>
+	<div class="title">Refine</div>
+</ion-header-bar>
+<ion-content overflow-scroll="true">
+<div class="list">
+	<div ng-repeat="item in refineCategory" class="item" ui-sref="app.refine">
+		{{item.name}}
+	</div>
+</div>
+</ion-content>
+<ion-footer-bar class="no-padding">
+	<div class="row row-no-padding">
+	<div class="col col-40">
+		<button class="button button-full button-stable no-margin height-100">Clear All</button>
+	</div>
+	<div class="col col-60">
+		<button class="button button-full button-positive no-margin height-100">Apply</button>
+	</div>
+	</div>
+</ion-footer-bar>
+</ion-view>

@@ -1,0 +1,85 @@
+﻿<ion-content class="detail-overview">
+<div class="relative" ng-click="openModalImages()">
+	<img src="img/detail/{{detail.img[0].name}}.jpg" class="float-left">
+	<span class="overview-image"><i class="icon ion-image"></i> {{detail.img.length}} ></span>
+</div>
+<div class="row row-no-padding">
+	<div class="col margin-right">
+		<button class="button button-full no-margin" ng-hide="saved" ng-click="saved=true">
+			<i class="icon ion-heart"> </i> SAVE
+		</button>
+		<button class="button button-full no-margin" ng-show="saved" ng-click="openModalMove()">
+			<i class="icon icon-pen"> </i> EDIT LIST
+		</button>
+	</div>
+	<div class="col">
+		<button class="button button-full no-margin" ng-click="showDetailShare()">
+			<i class="icon icon-arrow-right"> </i> SHARE
+		</button>
+	</div>
+</div>
+<div class="padding">
+	<h4>Lorem Ipsum</h4>
+	<span class="item-rating relative" style="font-size:22px">
+		<span class="max-rating"><i ng-repeat="i in rangeNum(5) track by $index" class="icon ion-android-star"></i></span>
+		<span class="rating"><i ng-repeat="i in rangeNum(detail.rating) track by $index" class="icon ion-android-star"></i></span>
+	</span>
+	<span class="positive">({{detail.ratingList.length}})</span>
+	<h5 class="margin-right">
+		<b class="margin-right">RECENT REVIEWS</b>
+		<span class="positive">View All</span>
+	</h5>
+	<div ng-repeat="item in detail.ratingList | limitTo:2">
+		<span class="item-rating relative">
+			<span class="max-rating"><i ng-repeat="i in rangeNum(5) track by $index" class="icon ion-android-star"></i></span>
+			<span class="rating"><i ng-repeat="i in rangeNum(item.rating) track by $index" class="icon ion-android-star"></i></span>
+		</span>
+		<div>"{{item.content}}"</div>
+		<span>{{item.username}}</span>
+	</div>
+	<h5><b>SIZING</b></h5>
+	<div class="overview-sizing">
+		<div class="row">
+			<div class="col col-33">Too Small</div>
+			<div class="col relative">
+				<div class="stable-bg height-100"></div>
+				<div class="item-sizing" style="width:{{detail.sizing.small}}%"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-33">Just Right</div>
+			<div class="col relative">
+				<div class="stable-bg height-100"></div>
+				<div class="item-sizing" style="width:{{detail.sizing.medium}}%"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-33">Too Large</div>
+			<div class="col relative">
+				<div class="stable-bg height-100"></div>
+				<div class="item-sizing" style="width:{{detail.sizing.large}}%"></div>
+			</div>
+		</div>
+		<div class="text-right padding-right stable">Based on 40 shopper reviews</div>
+	</div>
+	<h5><b>SIZE</b></h5><span ng-repeat="item in detail.size" class="margin-left">{{item.value}}<span ng-hide="$last">,</span></span>
+	<h5><b>COLORS</b></h5><span ng-repeat="item in detail.color" class="margin-left">{{item.value}}<span ng-hide="$last">,</span></span>
+	<h5 class="margin-right">
+		<b class="margin-right">ESTIMATED ARRIVAL</b>
+		<span class="positive">Details</span>
+	</h5>
+	<span class="margin-left">{{detail.shiptime}}</span>
+	<h5 class="margin-right">
+		<b class="margin-right">ESTIMATED SHIPPING</b>
+		<span class="positive">Details</span>
+	</h5>
+	<span class="margin-left">{{detail.shipping | currency}}</span>
+</div>
+</ion-content>
+<ion-footer-bar class="dark-bg overview-footer">
+	<div class="width-60">
+		<span class="energized">${{detail.sale}}</span>
+		<span class="energized overview-price" ng-class="{'has-sale':detail.sale}">${{detail.price}}</span>
+	</div>
+	<button class="button width-40 button-energized" ng-click="openModalSize()">BUY</button>
+</ion-footer-bar>

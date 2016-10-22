@@ -1,0 +1,51 @@
+/* Empty. Add your own CSS if you like */
+body{
+	font-family:Helvetica;
+	font-size:14px;
+}
+.sign-button-calm{
+	background:#4db6ff;
+	color:#fff
+}
+.popup-alert .popup{
+	background:rgba(61,68,85,0.9);
+	border:5px solid #a3a3a3;
+	border-radius:5px;
+	padding-top:60px
+}
+.popup-alert .popup-head{display:none}
+.popup-alert .popup-buttons{
+	position:absolute;
+    top:0;
+    width:100%
+}
+.popup-alert .popup-buttons .button{font-size:40px}
+
+.popup-confirm .popup{
+	background:#f7f7f7;
+	border-radius:5px
+}
+.popup-confirm .popup-head{
+	border-color:#69aafe;
+	text-align:left
+}
+.popup-confirm .popup-head .popup-title{color:#69aafe}
+.popup-confirm .popup-buttons{
+	border-top:1px solid #b1b1b1;
+	padding:0;
+	min-height:40px
+}
+.popup-confirm .popup-buttons .button{
+	background:none;
+	margin:0;
+	min-height:40px
+}
+
+.item-rating{font-size:18px}
+.item-rating i{margin-right:3px}
+.item-rating .max-rating{color:#a0a0a0}
+.item-rating .rating{
+	color:#ffea00;
+	position:absolute;
+	left:0
+}

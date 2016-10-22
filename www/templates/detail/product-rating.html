@@ -1,0 +1,78 @@
+<ion-content class="product-rating-main">
+<div class="list no-margin">
+    <div class="item item-thumbnail-left no-border">
+      <img src="img/detail/1.jpg" />
+      <h2><b>Lorem Ipsum</b></h2>
+      <p>Bought By: 520 People</p>
+      <p>Save By: 6,010 People</p>
+    </div>
+</div>
+<div class="row">
+	<div class="col col-40 col-center">
+	<span class="item-rating relative" style="font-size:22px">
+		<span class="max-rating"><i ng-repeat="i in rangeNum(5) track by $index" class="icon ion-android-star"></i></span>
+		<span class="rating"><i ng-repeat="i in rangeNum(detail.rating) track by $index" class="icon ion-android-star"></i></span>
+	</span>
+	<div class="stable">({{detail.ratingList.length}} Ratings)</div>
+	</div>
+	<div class="col">
+		<div class="row row-no-padding">
+		<span class="col col-50 item-rating text-right" style="font-size:15px">
+			<span class="max-rating"><i ng-repeat="i in rangeNum(5) track by $index" class="icon ion-android-star"></i></span>
+		</span>
+		<div class="col col-center relative item-percent">
+			<div class="stable-bg height-100"></div>
+			<div class="item-sizing height-100" style="width:40%"></div>
+		</div>
+		</div>
+		<div class="row row-no-padding">
+		<span class="col col-50 item-rating text-right" style="font-size:15px">
+			<span class="max-rating"><i ng-repeat="i in rangeNum(4) track by $index" class="icon ion-android-star"></i></span>
+		</span>
+		<div class="col col-center relative item-percent">
+			<div class="stable-bg height-100"></div>
+			<div class="item-sizing height-100" style="width:29%"></div>
+		</div>
+		</div>
+		<div class="row row-no-padding">
+		<span class="col col-50 item-rating text-right" style="font-size:15px">
+			<span class="max-rating"><i ng-repeat="i in rangeNum(3) track by $index" class="icon ion-android-star"></i></span>
+		</span>
+		<div class="col col-center relative item-percent">
+			<div class="stable-bg height-100"></div>
+			<div class="item-sizing height-100" style="width:6%"></div>
+		</div>
+		</div>
+		<div class="row row-no-padding">
+		<span class="col col-50 item-rating text-right" style="font-size:15px">
+			<span class="max-rating"><i ng-repeat="i in rangeNum(2) track by $index" class="icon ion-android-star"></i></span>
+		</span>
+		<div class="col col-center relative item-percent">
+			<div class="stable-bg height-100"></div>
+			<div class="item-sizing height-100" style="width:10%"></div>
+		</div>
+		</div>
+		<div class="row row-no-padding">
+		<span class="col col-50 item-rating text-right" style="font-size:15px">
+			<span class="max-rating"><i ng-repeat="i in rangeNum(1) track by $index" class="icon ion-android-star"></i></span>
+		</span>
+		<div class="col col-center relative item-percent">
+			<div class="stable-bg height-100"></div>
+			<div class="item-sizing height-100" style="width:15%"></div>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="list no-margin list-user-rating">
+    <div ng-repeat="item in detail.ratingList" class="item item-thumbnail-left">
+      <img src="img/detail/rating/1.jpg" />
+      <h2><b>{{item.username}}</b></h2>
+      <p>{{item.time}}</p>
+      <p>{{item.content}}</p>
+	  <span class="item-rating">
+		<span class="max-rating"><i ng-repeat="i in rangeNum(5) track by $index" class="icon ion-android-star"></i></span>
+		<span class="rating"><i ng-repeat="i in rangeNum(item.rating) track by $index" class="icon ion-android-star"></i></span>
+	  </span>
+    </div>
+</div>
+</ion-content>

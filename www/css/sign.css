@@ -1,0 +1,111 @@
+﻿.welcome-content{
+	background-image:url(img/welcome-bg.jpg);
+	color:#394985
+}
+.welcome-content .welcome-main{
+	background:#fff;
+	background:rgba(255,255,255,0.9);
+	width:220px
+}
+
+.header-menu .bar-header{background:#353a4d}
+.header-menu .bar-header *{color:#fff}
+.sign-form .item.item-input{
+	margin-bottom:10px;
+	border-radius:5px!important;
+	border-color:#a4a4a4;
+	padding:0;
+	padding-left:10px
+}
+.sign-social .button.icon-left{padding-left:1px}
+.sign-social .button.icon-left:before{
+	font-size:42px;
+	padding-top:2px
+}
+.button.icon-left.icon-google:before{color:#eb3a27}
+.button.icon-left.icon-facebook:before{color:#325c8e}
+
+.personalize-birthday .row>.col{margin:0px 5px}
+.personalize-birthday .select-item{
+	height:50px;
+	line-height:50px
+}
+.personalize-birthday .select-item.active{
+	color:#000;
+	border-top:1px solid #3fc2ff;
+	border-bottom:1px solid #3fc2ff;
+}
+.personalize-gender{
+	width:150px;
+	border-radius:5px;
+	overflow:visible
+}
+.personalize-gender>.button{
+	width:100%;
+	padding-right:0;
+	text-align:left;
+	border:1px solid #666;
+	min-height:25px;
+	line-height:25px;
+	background:#dcdcdc;
+    background:-webkit-linear-gradient(#f3f3f3, #a3a3a3);
+    background:-o-linear-gradient(#f3f3f3, #a3a3a3);
+    background:-moz-linear-gradient(#f3f3f3, #a3a3a3);
+    background:linear-gradient(#f3f3f3, #a3a3a3);
+}
+.personalize-gender>.button:before{
+	line-height:25px;
+	font-size:14px;
+	padding:0 5px;
+	color:#fff;
+	background:#858585
+}
+.personalize-gender .gender-select{
+	margin-top:5px;
+	margin-left:5px;
+	width:120px;
+	border-radius:8px;
+	overflow:hidden
+}
+.gender-select .item{
+	background:#dfdfdf;
+	padding:10px;
+	text-align:left
+}
+
+.suggestion-main .item.item-checkbox{
+	float:left;
+	width:160px;
+	border:none;
+	padding:20px
+}
+.suggestion-main .item.item-checkbox .checkbox{
+	top:0;
+	right:auto;
+	left:0;
+	margin:0;
+	width:100%;
+	height:100%
+}
+.suggestion-main .item.item-checkbox .checkbox-icon{
+	width:100%;
+	height:100%;
+	display:none;
+	background:rgba(255,255,255,0.6)
+}
+.suggestion-main .item.item-checkbox .checkbox-icon:before{display:none}
+.suggestion-main .item.item-checkbox .checkbox-icon:after{
+	border-color:#3e4560;
+	border-width:3px;
+	width:18px;
+	height:9px;
+	top:50%;
+	left:50%;
+	margin-top:-9px;
+	margin-left:-9px
+}
+.suggestion-main .item.item-checkbox .checkbox input:checked + .checkbox-icon{display:block}
+.suggestion-footer{
+	height:50px;
+	background:rgba(0,0,0,0.4)
+}

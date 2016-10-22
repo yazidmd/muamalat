@@ -1,0 +1,13 @@
+<ion-modal-view class="modal-full modal-images">
+<ion-header-bar class="bar bar-dark">
+	<button class="button button-clear button-icon ion-android-arrow-back" ng-click="closeModalImages()"></button>
+	<div class="title">{{imagesViewing}} of {{detail.img.length}}</div>
+</ion-header-bar>
+<ion-content scroll="false" class="modal-images-main">
+<ion-slide-box on-slide-changed="imagesHasChanged($index)" class="height-100">
+  <ion-slide ng-repeat="item in detail.img" class="row no-padding row-center no-margin">
+    <img src="img/detail/img/{{item.name}}.jpg">
+  </ion-slide>
+</ion-slide-box>
+</ion-content
+</ion-modal-view>

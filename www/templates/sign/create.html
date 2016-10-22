@@ -1,0 +1,31 @@
+﻿<ion-view title="Create Account">
+<link href="css/sign.css" rel="stylesheet" type="text/css" />
+<ion-content class="padding text-center">
+	<span>Let’s create your account</span>
+	<div class="list padding-top sign-form">
+	  <div class="row row-no-padding">
+		<label class="item item-input margin-right">
+			<input type="text" placeholder="First Name" ng-model="data.firstname">
+		</label>
+		<label class="item item-input">
+			<input type="text" placeholder="Last Name" ng-model="data.lastname">
+		</label>
+	  </div>
+	  <label class="item item-input">
+		<input type="text" placeholder="Email" ng-model="data.email">
+	  </label>
+	  <label class="item item-input">
+		<input type="text" placeholder="Confirm Email" ng-model="data.confirmemail">
+	  </label>
+	  <label class="item item-input">
+		<input type="password" placeholder="Password" ng-model="data.password">
+	  </label>
+	</div>
+	<button class="button button-positive button-block" ng-click="createAccount()">Create Account</button>
+	<span class="stable">OR</span>
+	<div class="padding sign-social margin-top">
+		<button class="button button-block icon-left icon-google">Sign In with Google</button>
+		<button class="button button-block icon-left icon-facebook">Sign In with Facebook</button>
+	</div>
+</ion-content>
+</ion-view>

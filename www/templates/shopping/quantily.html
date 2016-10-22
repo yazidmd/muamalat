@@ -1,0 +1,16 @@
+<button class="button button-clear button-icon ion-ios-close-empty" ng-click="closePopupQuantily()"></button>
+<img src="img/shopping/1.jpg" class="margin-auto" width="100px">
+<div class="padding-top text-center">
+	<div class="margin-bottom"><b>Quantily:</b></div>
+	<button class="button icon-right ion-chevron-down button-full button-quantily" ng-click="choseQuantily=true">
+		<span>{{data.quantily}}</span>
+	</button>
+</div>
+<div class="list chose-quantily" ng-show="choseQuantily">
+	<div class="item no-border" ng-click="data.quantily=1; choseQuantily=false">1</div>
+	<div class="item no-border" ng-click="data.quantily=2; choseQuantily=false">2</div>
+	<div class="item no-border" ng-click="data.quantily=3; choseQuantily=false">3</div>
+	<div class="item no-border" ng-click="data.quantily=4; choseQuantily=false">4</div>
+	<div class="item no-border" ng-click="data.quantily=5; choseQuantily=false">5</div>
+	<div class="item no-border" ng-click="data.quantily=6; choseQuantily=false">6</div>
+</div>

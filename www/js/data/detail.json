@@ -1,0 +1,98 @@
+{
+	"name":"This item has been add to cart!",
+	"img":[
+		{"name":1},
+		{"name":2},
+		{"name":3}
+	],
+	"price":199,
+	"sale":99,
+	"rating":4,
+	"ratingList":[
+		{
+			"rating":4,
+			"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id.",
+			"username":"Username",
+			"time":"3 hour ago"
+		},
+		{
+			"rating":3,
+			"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id.",
+			"username":"Username",
+			"time":"3 hour ago"
+		},
+		{
+			"rating":3,
+			"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id.",
+			"username":"Username",
+			"time":"3 hour ago"
+		},
+		{
+			"rating":3,
+			"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id.",
+			"username":"Username",
+			"time":"3 hour ago"
+		},
+		{
+			"rating":4,
+			"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id.",
+			"username":"Username",
+			"time":"3 hour ago"
+		}
+	],
+	"ratingStore":[
+		{
+			"rating":4,
+			"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id.",
+			"username":"Username",
+			"time":"3 hour ago"
+		},
+		{
+			"rating":3,
+			"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id.",
+			"username":"Username",
+			"time":"3 hour ago"
+		},
+		{
+			"rating":3,
+			"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id.",
+			"username":"Username",
+			"time":"3 hour ago"
+		},
+		{
+			"rating":3,
+			"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id.",
+			"username":"Username",
+			"time":"3 hour ago"
+		},
+		{
+			"rating":4,
+			"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id.",
+			"username":"Username",
+			"time":"3 hour ago"
+		}
+	],
+	"sizing":{"small":5,"medium":80,"large":15},
+	"size":[
+		{"value":6.5},
+		{"value":7},
+		{"value":7.5},
+		{"value":8},
+		{"value":8.5},
+		{"value":9},
+		{"value":9.5}
+	],
+	"color":[
+		{"value":"Black","price":199},
+		{"value":"Blue","price":199},
+		{"value":"Green","price":199},
+		{"value":"Red","price":199},
+		{"value":"White","price":199}
+	],
+	"shiptime":"29 - 39 days",
+	"shipping":9,
+	"description":[
+		{"content":"Lorem ipsum dolor sit amet, equidem propriae ne eam, sit eius moderatius te. Atqui latine democritum vis id. Ne sed odio meliore imperdiet. Vel altera maiestatis ea, qui atomorum sensibus moderatius eu. Mei ex facer nulla dolore, decore expetenda voluptatum no eos."},
+		{"content":"Elitr suscipit eum an, eam eu possit numquam perfecto. Id his corpora probatus prodesset. Agam ullamcorper ne quo. Est ut feugiat atomorum, eos ut quidam menandri accusata, usu ne munere aliquip legimus. Cibo decore blandit eu vim, sea probatus recusabo ne, ei duo habeo etiam."}
+	]
+}

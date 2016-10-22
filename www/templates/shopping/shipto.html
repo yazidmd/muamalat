@@ -1,0 +1,45 @@
+<div class="padding">
+<div class="padding-bottom">
+	<b>Ship To:</b>
+	<u class="float-right stable" ng-click="closeShipTo()">cancel</u>
+</div>
+<div class="list list-inset no-margin">
+  <label class="item item-input">
+    <input type="text" placeholder="Full Name*" ng-model="data.fullname">
+  </label>
+  <label class="item item-input">
+    <input type="text" placeholder="Street Address*" ng-model="data.address">
+  </label>
+  <label class="item item-input">
+    <input type="text" placeholder="Apt/Suite/Unit (Optional)">
+  </label>
+  <div class="row row-no-padding">
+	<div class="col">
+	  <label class="item item-input">
+		<input type="text" placeholder="Your Country">
+	  </label>
+	</div>
+	<div class="col">
+	  <label class="item item-input">
+		<input type="text" placeholder="State (Optional)">
+	  </label>
+	</div>
+  </div>
+  <label class="item item-input">
+    <input type="text" placeholder="City*" ng-model="data.city">
+  </label>
+  <div class="row row-no-padding">
+	<div class="col">
+	  <label class="item item-input">
+		<input type="text" placeholder="Zip/Postal Code*" ng-model="data.postalcode">
+	  </label>
+	</div>
+	<div class="col">
+	  <label class="item item-input">
+		<input type="text" placeholder="Phone*" ng-model="data.phone">
+	  </label>
+	</div>
+  </div>
+</div>
+</div>
+<button class="button button-full no-margin button-energized" ng-click="checkShipTo()">DONE</button>

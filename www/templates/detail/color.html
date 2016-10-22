@@ -1,0 +1,15 @@
+<ion-modal-view class="modal-size">
+<ion-header-bar align-title="center">
+	<button class="button button-clear button-icon ion-android-arrow-back" ng-click="backSelectSize()"></button>
+	<div class="title">SELECT COLOR</div>
+	<button class="button button-clear button-icon ion-ios-close-empty" ng-click="closeModalColor()"></button>
+</ion-header-bar>
+<ion-content class="select-color-main">
+	<div class="list">
+		<div ng-repeat="item in detail.color" class="item no-border text-center" ng-click="selectColor()">
+			<span>{{item.value}}<span>
+			<span class="energized absolute">${{item.price}}</span>
+		</div>
+	</div>
+</ion-content>
+</ion-modal-view>

@@ -1,0 +1,38 @@
+﻿[
+	{
+		"id":1,
+		"hourlyDeal":"12 : 35",
+		"price":200,
+		"sale":30,
+		"bought":1000
+	},
+	{
+		"id":2,
+		"price":50,
+		"bought":1235
+	},
+	{
+		"id":3,
+		"price":200,
+		"sale":10,
+		"bought":680
+	},
+	{
+		"id":4,
+		"price":120,
+		"sale":50,
+		"bought":218
+	},
+	{
+		"id":5,
+		"price":100,
+		"sale":25,
+		"bought":578
+	},
+	{
+		"id":6,
+		"price":60,
+		"sale":40,
+		"bought":119
+	}
+]

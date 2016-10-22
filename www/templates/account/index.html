@@ -1,0 +1,17 @@
+﻿<ion-view title="Account Name">
+<link href="css/account.css" rel="stylesheet" type="text/css">
+<ion-content scroll="false" class="account-main">
+<ion-tabs class="tabs-stable">
+  <ion-tab class="account-edit" title="Edit" icon="icon-person" ng-click="showChoseAPhoto()"></ion-tab>
+  <ion-tab title="<div>8</div>items" ui-sref="app.account">
+	<ion-nav-view><ion-pane ng-include="'templates/account/items.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="<div>20</div>following">
+	<ion-nav-view><ion-pane ng-include="'templates/account/following.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="<div>10</div>followers">
+	<ion-nav-view><ion-pane ng-include="'templates/account/follower.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+</ion-tabs>
+</ion-content>
+</ion-view>

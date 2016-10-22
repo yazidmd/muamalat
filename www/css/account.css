@@ -1,0 +1,77 @@
+﻿.account-main{top:0}
+.account-main .tabs{background:#ebebeb}
+.account-main .tabs .tab-item{line-height:35px}
+.account-main .tabs .tab-item .tab-title>div{
+	line-height:0px;
+    margin-top:16px;
+    font-size:18px;
+}
+.account-main .tabs .account-edit{
+	position:relative;
+	line-height:65px
+}
+.account-main .tabs .account-edit .icon{
+	position:absolute;
+    line-height:32px;
+    top:6px;
+    left:50%;
+    margin-left:-16px;
+    z-index:-1
+}
+.account-main .tabs .account-edit .icon:before{background:#fff}
+.account-main .tabs .account-edit .tab-title{
+	background:#000;
+    color:#fff;
+    padding:0 6px;
+    font-size:10px
+}
+.icon.icon-person{color:#bcbcbc}
+
+.items-main .items{
+	border:2px solid #c4c4c4;
+	border-radius:5px;
+	padding:5px
+}
+.items-main .items>img{
+	width:126px;
+	height:126px
+}
+.items-main .items .items-image{height:40px}
+.items-main .items .items-image>img{
+	height:40px;
+	width:40px;
+	margin-right:3px
+}
+.items-main .items .items-image .more-image{
+	width:40px;
+	height:40px;
+	background:#e5ecf1;
+	line-height:40px;
+	text-align:center;
+	float:right
+}
+
+.follow-main .button{
+	position:absolute;
+    top:10px;
+    right:16px;
+    line-height:30px;
+    min-height:30px;
+}
+
+.popup-chose-photo .popup{
+	background:#fff;
+	border-radius:5px
+}
+.popup-chose-photo .popup-head{border:none}
+.popup-chose-photo .popup-body img{
+	width:50px;
+    display:block;
+    margin:0 auto
+}
+.popup-chose-photo .popup-buttons .button{
+	background:#efefef;
+	border:1px solid #b8b8b8;
+	color:#000;
+	border-radius:5px
+}

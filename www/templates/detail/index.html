@@ -1,0 +1,26 @@
+<ion-view title="Details">
+<link href="css/detail.css" rel="stylesheet" type="text/css" />
+<ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-ios-search" ui-sref="app.search"></button>
+</ion-nav-buttons>
+<ion-tabs class="tabs-calm tabs-icon-top detail-main">
+  <ion-tab title="OVERVIEW" on-select="selectedTab(1)" hidden="{{tabsHidden['1']}}">
+	<ion-nav-view><ion-pane ng-include="'templates/detail/overview.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="RELATED" on-select="selectedTab(2)" hidden="{{tabsHidden['2']}}">
+	<ion-nav-view><ion-pane ng-include="'templates/detail/related.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="DESCRIPTION" on-select="selectedTab(3)" hidden="{{tabsHidden['3']}}">
+	<ion-nav-view><ion-content class="padding light-bg"><p ng-repeat="item in detail.description">{{item.content}}</p></ion-content></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="PRODUCT RATING" on-select="selectedTab(4)" hidden="{{tabsHidden['4']}}">
+	<ion-nav-view><ion-pane ng-include="'templates/detail/product-rating.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="STORE RATING" on-select="selectedTab(5)" hidden="{{tabsHidden['5']}}">
+	<ion-nav-view><ion-pane ng-include="'templates/detail/store-rating.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="SHIPPING INFO" on-select="selectedTab(6)" hidden="{{tabsHidden['6']}}">
+	<ion-nav-view><ion-pane ng-include="'templates/detail/shipping.html'"></ion-pane></ion-nav-view>
+  </ion-tab>
+</ion-tabs>
+</ion-view>

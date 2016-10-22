@@ -1,0 +1,12 @@
+.order-history .icon.icon-list{
+	font-size:150px;
+	color:#acacac
+}
+.order-history .button.button-block{color:#fff}
+.order-history .order-status{
+	padding:2px 5px;
+	border-radius:5px;
+	color:#fff
+}
+.order-history .order-status.cancelled{background-color:#f44343}
+.order-history .order-status.completed{background-color:#62b5e9}

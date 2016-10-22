@@ -1,0 +1,22 @@
+<ion-view>
+<link href="css/search.css" rel="stylesheet" type="text/css">
+<ion-nav-title class="search-header relative">
+	<div class="list list-inset no-margin bg-none">
+	<label class="item item-input no-border bg-none light">
+		<i class="icon ion-ios-search-strong margin-right"></i>
+		<input type="text" placeholder="Search" ng-model="searchKey.name">
+	</label>
+	</div>
+	<div class="list search-main no-padding" ng-show="searchKey.name">
+		<div ng-repeat="item in search.key | filter:searchKey" class="item no-border bg-none" ui-sref="app.home">
+			{{item.name}}
+		</div>
+	</div>
+</ion-nav-title>
+<ion-content>
+<div class="list">
+	<div class="item item-divider"><b>Recent Searches</b></div>
+	<div ng-repeat="item in search.recent" class="item no-border">{{item.name}}</div>
+</div>
+</ion-content>
+</ion-view>

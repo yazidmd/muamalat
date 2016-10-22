@@ -1,0 +1,11 @@
+﻿.side-menu-content{background:rgba(0,0,0,0.4);}
+.menu-open .menu-content .side-menu-content{z-index:11}
+.menu-left-main{background:#383e4b}
+.menu-left-main .item{
+	background:transparent;
+	color:#fff
+}
+.menu-left-main .item .item-content{background:transparent}
+.menu-left-main .item.item-icon-left .icon{color:#bcbcbc}
+.menu-left-main .item.item-icon-left .icon.icon-person:before{background:#fff}
+.menu-left-main .item{font-size: 12px;}

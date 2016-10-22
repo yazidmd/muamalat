@@ -1,0 +1,70 @@
+.shopping-main{font-size:90%}
+.shopping-main .shopping-list .item{
+	font-size:100%;
+	border-left:none;
+	border-right:none
+}
+.shopping-list .item .list-price{font-weight:bold}
+.shopping-list .item .list-price.has-sale{
+	font-weight:normal;
+	font-size:90%;
+	text-decoration:line-through
+}
+.shopping-main .shopping-shipto{background:#fff}
+.shopping-shipto .list.list-inset .item.item-input{
+	padding:0 10px;
+	margin-bottom:10px
+}
+.shopping-shipto .list.list-inset .item.item-input input{padding:0}
+.shopping-shipto .list.list-inset .row .col{margin-right:10px}
+.shopping-shipto .list.list-inset .row .col:last-child{margin-right:0}
+
+.popup-quantily .popup{background:#fff}
+.popup-quantily .popup-head{display:none}
+.popup-quantily .popup-body{
+	position:relative;
+	overflow:visible
+}
+.popup-quantily .popup-body .button-clear{
+	color:#000;
+	font-size:40px;
+	position:absolute;
+	top:0;
+	right:5px
+}
+.popup-quantily .button-quantily{
+	margin:0;
+	text-align:left;
+	border:1px solid #c4c4c4;
+	background:transparent
+}
+.popup-quantily .button.ion-chevron-down:before{color:#a5a5a5}
+.popup-quantily .list.chose-quantily{
+	position:absolute;
+    width:200px;
+    bottom:40px;
+    margin-left:15px;
+	border-radius:5px;
+	background:#d1d1d1
+}
+.popup-quantily .list.chose-quantily .item{
+	background:transparent;
+	padding:10px
+}
+
+.shopping-main .shopping-payment{background:#fff}
+.shopping-payment .payment-method{
+	height:82px;
+	border:1px solid #c4c4c4
+}
+.shopping-payment .payment-method .col.active{background:#c4c4c4}
+.shopping-payment .payment-method .col{
+	padding:15px 30px;
+	line-height:25px
+}
+.shopping-payment .payment-method .col img{height:50px}
+.shopping-payment .list.list-inset .item.item-input{
+	padding:0 10px;
+	margin-bottom:10px
+}
+.shopping-payment .list.list-inset .item.item-input input{padding:0}

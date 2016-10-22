@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url(fonts/Helvetica/Helvetica.otf) format("opentype");
+	font-weight: normal;
+	font-style: normal
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url(fonts/Helvetica/Helvetica-Bold.otf) format("opentype");
+	font-weight: bold;
+	font-style: normal
+}
+@font-face {
+    font-family: 'HelveticaBlack';
+    src: url(fonts/Helvetica/Helvetica-Black.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal
+}
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url(fonts/Helvetica/Helvetica-Neue-Bold.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal
+}
+@font-face {
+    font-family: 'GeoSlab';
+    src: url(fonts/GeoSlab/GeoSlab.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal
+}

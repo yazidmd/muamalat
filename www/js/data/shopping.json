@@ -1,0 +1,30 @@
+{
+	"shipto":"Your location",
+	"billto":"Credit card",
+	"total":96,
+	"shipping":32,
+	"item":[
+		{
+			"id":1,
+			"name":"Lorem ipsum dolor sit amet.",
+			"size":8.5,
+			"color":"Blue",
+			"quantily":2,
+			"shipping":9,
+			"shiptime":"29 - 39 days",
+			"price":252,
+			"sale":96
+		},
+		{
+			"id":2,
+			"name":"Lorem ipsum dolor sit amet.",
+			"size":8.5,
+			"color":"Red",
+			"quantily":2,
+			"shipping":9,
+			"shiptime":"29 - 39 days",
+			"price":252,
+			"sale":96
+		}
+	]
+}

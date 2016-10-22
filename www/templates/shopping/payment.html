@@ -1,0 +1,43 @@
+<div class="padding">
+	<b>Ship To:</b>
+	<u class="float-right stable" ng-click="closePayment()">cancel</u>
+</div>
+<div class="row row-no-padding payment-method margin-bottom">
+	<div class="col active" ng-click="orderCOD=false"><img src="css/img/icon-card.png" class="margin-auto"></div>
+	<div class="col text-center" ng-click="placeOrderCOD()"><b>CASH ON DELIVERY</b></div>
+</div>
+<div class="padding"><p><b>Credit Card</b></p>
+<div class="list list-inset no-margin">
+  <label class="item item-input">
+    <input type="text" placeholder="Card Number" ng-model="data.cardnumber">
+  </label>
+  <div class="row row-no-padding no-margin">
+	<div class="col" style="padding-top:7px">Security Code</div>
+	<div class="col col-40">
+	  <label class="item item-input">
+		<input type="text" placeholder="CVV" ng-model="data.security" maxlength="3">
+	  </label>
+	</div>
+  </div>
+  <div class="row row-no-padding no-margin">
+	<div class="col" style="padding-top:7px">Expiry Date</div>
+	<div class="col col-40">
+	  <label class="item item-input">
+		<input type="text" placeholder="MM/YY" ng-model="data.expiry">
+	  </label>
+	</div>
+  </div>
+  <div class="row row-no-padding no-margin">
+	<div class="col" style="padding-top:7px">
+		<div>Billing Zip/Postal Code</div>
+		<small class="stable">The zip or postal code from the address registered for this credit card</small>
+	</div>
+	<div class="col col-40">
+	  <label class="item item-input">
+		<input type="text" placeholder="Zip/Postal Code" ng-model="data.zipcode">
+	  </label>
+	</div>
+  </div>
+</div>
+<button class="button button-block button-energized" ng-click="checkPayment()">SAVE PAYMENT INFO</button>
+</div>

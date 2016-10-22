@@ -1,0 +1,42 @@
+<ion-view title="Personalize">
+<link href="css/settings.css" rel="stylesheet" type="text/css" />
+<ion-content class="text-center" scroll="false">
+<div class="padding light" style="background:#3e4560">
+	<h4 class="light no-margin"><b>Tell us about yourself</b></h4>
+	<small>We’ll find products you’ll love!</small>
+</div>
+<div class="padding personalize-birthday">
+	<b>Birthday</b>
+	<div class="width-60 margin-auto padding-vertical" style="height:170px">
+	<div class="row row-no-padding height-100">
+	<div class="col" on-drag-up="plusBirthday('month')" on-drag-down="minusBirthday('month')">
+		<div class="select-item text-center stable">{{birthday.month -1 | monthName}}</div>
+		<div class="select-item text-center stable active">{{birthday.month | monthName}}</div>
+		<div class="select-item text-center stable">{{birthday.month +1 | monthName}}</div>
+	</div>
+	<div class="col" on-drag-up="plusBirthday('day')" on-drag-down="minusBirthday('day')">
+		<div class="select-item text-center stable">{{birthday.day -1 | day}}</div>
+		<div class="select-item text-center stable active">{{birthday.day | day}}</div>
+		<div class="select-item text-center stable">{{birthday.day +1 | day}}</div>
+	</div>
+	<div class="col" on-drag-up="plusBirthday('year')" on-drag-down="minusBirthday('year')">
+		<div class="select-item text-center stable">{{birthday.year -1 | rangeYear:rangeYear}}</div>
+		<div class="select-item text-center stable active">{{birthday.year | rangeYear:rangeYear}}</div>
+		<div class="select-item text-center stable">{{birthday.year +1 | rangeYear:rangeYear}}</div>
+	</div>
+	</div>
+	</div>
+</div>
+<div class="margin-auto personalize-gender relative">
+	<div class="stable text-center padding-bottom">Gender</div>
+	<button class="button icon-right ion-arrow-down-b" ng-click="genderSelect=true">{{gender}}</button>
+	<div ng-show="genderSelect" class="gender-select absolute list">
+		<div class="item no-border" ng-click="gender='Female'; genderSelect=false">Female</div>
+		<div class="item no-border" ng-click="gender='Male'; genderSelect=false">Male</div>
+	</div>
+</div>
+<div class="padding absolute-footer width-100">
+	<button class="button sign-button-calm button-block no-margin" ui-sref="app.settings">Done</button>
+</div>
+</ion-content>
+</ion-view>

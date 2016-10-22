@@ -1,0 +1,23 @@
+.title{overflow:visible!important}
+.search-header .list .item{padding:5px 10px}
+.search-header .list .item .icon{
+	font-size:28px;
+	line-height:10px
+}
+.search-header .list .item input{
+	color:#fff;
+	border-bottom:1px solid #797979;
+	padding-left:5px
+}
+.search-header .list .item input::-webkit-input-placeholder{
+	color:#fff;
+	opacity:1;
+	font-size:100%;
+	padding-top:5px;
+} 
+.search-main{
+	background:#dbdbdb;
+	position:absolute;
+    width:250px;
+    top:40px
+}

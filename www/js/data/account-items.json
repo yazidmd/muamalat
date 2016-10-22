@@ -1,0 +1,19 @@
+﻿[
+	{
+		"id":1,
+		"name":"Birthday Wislist",
+		"img":[
+			{"name":"1_1"},
+			{"name":"1_2"}
+		],
+		"countImg":4
+	},
+	{
+		"id":2,
+		"name":"Micellaneous"
+	},
+	{
+		"id":3,
+		"name":"Abc"
+	}
+]

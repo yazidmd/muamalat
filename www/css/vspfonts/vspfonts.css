@@ -1,0 +1,55 @@
+﻿@font-face {
+font-family: "vspfonts";
+src: url("vspfonts.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+.icon-arrow-right:before,
+.icon-arrow-top-left:before,
+.icon-bluetooth:before,
+.icon-direc-wifi:before,
+.icon-hangouts:before,
+.icon-list:before,
+.icon-messages:before,
+.icon-panel:before,
+.icon-pen:before,
+.icon-percent:before,
+.icon-person:before,
+.icon-shop:before,
+.icon-star:before,
+.icon-tag:before,
+.icon-toggle:before,
+.icon-google:before,
+.icon-facebook:before,
+.icon-cart:before
+{
+display: inline-block;
+font-family: "vspfonts";
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+text-rendering: auto;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.icon-arrow-right:before{content: '\e000'}
+.icon-arrow-top-left:before{content: '\e001'}
+.icon-bluetooth:before{content: '\e002'}
+.icon-direc-wifi:before{content: '\e003'}
+.icon-hangouts:before{content: '\e004'}
+.icon-list:before{content: '\e005'}
+.icon-messages:before{content: '\e006'}
+.icon-panel:before{content: '\e007'}
+.icon-pen:before{content: '\e008'}
+.icon-percent:before{content: '\e009'}
+.icon-person:before{content: '\e00a'}
+.icon-shop:before{content: '\e00b'}
+.icon-star:before{content: '\e00c'}
+.icon-tag:before{content: '\e00d'}
+.icon-toggle:before{content: '\e00e'}
+.icon-google:before{content: '\e00f'}
+.icon-facebook:before{content: '\e010'}
+.icon-cart:before{content: '\e011'}

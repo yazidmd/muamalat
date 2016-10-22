@@ -1,0 +1,21 @@
+.notifications-main .item.item-icon-left{
+	white-space:normal;
+	padding-left:60px;
+	font-size:95%
+}
+.notifications-main .item.item-icon-left .icon{
+	color:#f7941d;
+	font-size:40px;
+	display:block;
+	padding-top:16px
+}
+.notifications-image{
+	height:70px;
+	white-space:nowrap;
+	margin-top:10px
+}
+.notifications-image img{
+	width:70px;
+	height:70px;
+	margin-right:5px
+}

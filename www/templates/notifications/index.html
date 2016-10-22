@@ -1,0 +1,15 @@
+<ion-view title="Notifications">
+<link href="css/notifications.css" rel="stylesheet" type="text/css">
+<ion-content class="notifications-main">
+<div class="list">
+	<div class="item item-icon-left" ng-repeat="item in notifications">
+		<i class="icon icon-percent"></i>
+		<p>{{item.time}}</p>
+		<span>{{item.content}}</span>
+		<ion-scroll direction="x" ng-show="item.image" class="notifications-image">
+			<img ng-repeat="itemImage in item.image" src="img/notifications/{{itemImage.name}}.jpg">
+		</ion-scroll>
+	</div>
+</div>
+</ion-content>
+</ion-view>

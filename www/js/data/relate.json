@@ -1,0 +1,26 @@
+[
+	{
+		"id":1,
+		"price":199,
+		"sale":25,
+		"bought":500
+	},
+	{
+		"id":2,
+		"price":199,
+		"sale":50,
+		"bought":1000
+	},
+	{
+		"id":3,
+		"price":199,
+		"sale":70,
+		"bought":1000
+	},
+	{
+		"id":4,
+		"price":199,
+		"sale":50,
+		"bought":150
+	}
+]
